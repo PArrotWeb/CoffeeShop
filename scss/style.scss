@@ -1,1 +1,69 @@
 @import "../css/reset.css";
+
+@font-face {
+  font-family: 'AlegreyaSans Regular';
+  src: url('../fonts/alegreyasans-regular.woff2') format('woff2'),
+  url('../fonts/alegreyasans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSans Regular';
+  src: url('../fonts/josefinsans-regular.woff2') format('woff2'),
+  url('../fonts/josefinsans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSans Bold';
+  src: url('../fonts/josefinsans-bold.woff2') format('woff2'),
+  url('../fonts/josefinsans-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeorgeRounded Regular';
+  src: url('../fonts/georgeroundedregular.woff2') format('woff2'),
+  url('../fonts/georgeroundedregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CedarvilleCursive Regular';
+  src: url('../fonts/cedarville-cursive.woff2') format('woff2'),
+  url('../fonts/cedarville-cursive.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$green: #2D635E;
+$pink: #FAE9E0;
+$white: #FFFFFF;
+$light-grey: #E3EBE7;
+$dark-grey: #444A4A;
+$black: #000000;
+
+$AlegreyaSansRegular: 'AlegreyaSans Regular', sans-serif;
+$JosefinSansRegular: 'JosefinSans Regular', sans-serif;
+$JosefinSansBold: 'JosefinSans Bold', sans-serif;
+$GeorgeRoundedRegular: 'GeorgeRounded Regular', sans-serif;
+$CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
+
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  background-color: $green;
+  color: $white;
+  border-radius: 5px;
+  font-family: $GeorgeRoundedRegular;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+}
