@@ -1,0 +1,51 @@
+@import "style.scss";
+
+.header {
+}
+
+.header__container {
+  height: 115px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+}
+
+.logo__img {
+  display: block;
+}
+
+.nav {
+  font-family: $JosefinSansRegular;
+  font-size: 16px;
+  line-height: 1;
+  text-align: justify;
+  color: $black;
+  margin-left: auto;
+  margin-right: 57px;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  align-items: center;
+}
+
+.nav__item {
+}
+
+.nav__link {
+}
+
+.header__btn {
+  padding: 15px 26px;
+}
