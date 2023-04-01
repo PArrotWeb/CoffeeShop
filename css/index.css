@@ -1,4 +1,4 @@
-@import "../css/reset.css";
+@import '../css/reset.css';
 @font-face {
   font-family: "AlegreyaSans Regular";
   src: url("../fonts/alegreyasans-regular.woff2") format("woff2"), url("../fonts/alegreyasans-regular.woff") format("woff");
@@ -40,29 +40,53 @@
 }
 
 .btn {
-  display: inline-block;
-  background-color: #2D635E;
-  color: #FFFFFF;
-  border-radius: 5px;
   font-family: "GeorgeRounded Regular", sans-serif;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #2d635e;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
 }
 
 .category-text {
   font-family: "CedarvilleCursive Regular", sans-serif;
   font-size: 28px;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
   transform: rotate(180deg);
-  color: #000000;
+  color: #000;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
+
+h1, h2, h3 {
+  font-family: "JosefinSans Bold", sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-size: 63px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-family: "AlegreyaSans Regular", sans-serif;
+  font-size: 19px;
+  color: #444a4a;
+  line-height: 1.9;
 }
 
 .header__container {
-  height: 115px;
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  height: 115px;
 }
 
 .logo__img {
@@ -73,22 +97,22 @@
   font-family: "JosefinSans Regular", sans-serif;
   font-size: 16px;
   line-height: 1;
-  text-align: justify;
-  color: #000000;
-  margin-left: auto;
   margin-right: 57px;
+  margin-left: auto;
+  text-align: justify;
+  color: #000;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 .nav__list {
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 90px;
-  align-items: center;
 }
 
 .header__btn {
@@ -97,10 +121,10 @@ a {
 
 .main__container {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  height: calc(100vh - 115px);
+  height: 650px;
 }
 
 .main__left, .main__right {
@@ -110,8 +134,8 @@ a {
 
 .main__left {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
   height: 460px;
   gap: 40px;
@@ -122,21 +146,16 @@ a {
   font-size: 28px;
 }
 
-.left__title {
-  font-family: "JosefinSans Bold", sans-serif;
-  font-size: 63px;
-}
-
 .left__btn {
-  padding: 20px 70px;
   font-size: 20px;
+  padding: 20px 70px;
 }
 
 .main__right {
   display: flex;
+  align-items: flex-end;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .right__read-more {
@@ -148,51 +167,79 @@ a {
   position: relative;
   width: 410px;
   height: 466px;
-  background: #E3EBE7;
+  background-color: #e3ebe7;
 }
 
 .right__coffee-img {
   position: absolute;
-  left: 39px;
   top: 140px;
+  left: 39px;
 }
 
 .right__follow {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 15px;
   margin-left: 40px;
+  gap: 15px;
 }
 
 .follow__icon {
-  height: 32px;
   width: 32px;
+  height: 32px;
 }
 
 .follow__text {
   font-family: "JosefinSans Regular", sans-serif;
   font-size: 28px;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
   transform: rotate(180deg);
-  color: #444A4A;
+  color: #444a4a;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
+
+.about {
+  height: 450px;
+  display: flex;
+  align-items: center;
 }
 
 .about__container {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
-  justify-content: right;
-  align-items: center;
+  justify-content: space-between;
+  height: 300px;
   gap: 100px;
-  height: 450px;
 }
 
 .about__cup-block {
+  position: relative;
   width: 380px;
   height: 287px;
-  background: #FAE9E0;
-  position: relative;
+  background-color: #fae9e0;
+}
+
+.cup-block__category-text {
+  position: absolute;
+  top: -25px;
+}
+
+.cup-block__cup-img {
+  position: absolute;
+  top: 78px;
+  left: 28px;
+  width: 364.59px;
+  height: 262.96px;
+}
+
+.about__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 645px;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

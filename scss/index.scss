@@ -4,11 +4,11 @@
 }
 
 .header__container {
-  height: 115px;
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  height: 115px;
 }
 
 .logo {
@@ -22,10 +22,10 @@
   font-family: $JosefinSansRegular;
   font-size: 16px;
   line-height: 1;
+  margin-right: 57px;
+  margin-left: auto;
   text-align: justify;
   color: $black;
-  margin-left: auto;
-  margin-right: 57px;
 }
 
 a {
@@ -35,9 +35,9 @@ a {
 
 .nav__list {
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 90px;
-  align-items: center;
 }
 
 .nav__item {
@@ -56,10 +56,10 @@ a {
 
 .main__container {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  height: calc(100vh - 115px);
+  height: 650px;
 }
 
 .main__left, .main__right {
@@ -69,8 +69,8 @@ a {
 
 .main__left {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
   height: 460px;
   gap: 40px;
@@ -82,20 +82,18 @@ a {
 }
 
 .left__title {
-  font-family: $JosefinSansBold;
-  font-size: 63px;
 }
 
 .left__btn {
-  padding: 20px 70px;
   font-size: 20px;
+  padding: 20px 70px;
 }
 
 .main__right {
   display: flex;
+  align-items: flex-end;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .right__read-more {
@@ -107,63 +105,79 @@ a {
   position: relative;
   width: 410px;
   height: 466px;
-  background: $light-grey;
+  background-color: $light-grey;
 }
 
 .right__coffee-img {
   position: absolute;
-  left: 39px;
   top: 140px;
+  left: 39px;
 }
 
 .right__follow {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 15px;
   margin-left: 40px;
+  gap: 15px;
 }
 
 .follow__icon {
-  height: 32px;
   width: 32px;
+  height: 32px;
 }
 
 .follow__text {
   font-family: $JosefinSansRegular;
   font-size: 28px;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
   transform: rotate(180deg);
   color: $dark-grey;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
 }
 
 .about {
+  height: 450px;
+  display: flex;
+  align-items: center;
 }
 
 .about__container {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
-  justify-content: right;
-  align-items: center;
+  justify-content: space-between;
+  height: 300px;
   gap: 100px;
-  height: 450px;
 }
 
 .about__cup-block {
+  position: relative;
   width: 380px;
   height: 287px;
-  background: $light-orange;
-  position: relative;
+  background-color: $light-orange;
 }
 
 .cup-block__category-text {
+  position: absolute;
+  top: -25px;
 }
 
-.cup-block__cup {
+.cup-block__cup-img {
+  position: absolute;
+  top: 78px;
+  left: 28px;
+  width: 364.59px;
+  height: 262.96px;
 }
 
 .about__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 645px;
+  gap: 30px;
 }
 
 .about__title {
