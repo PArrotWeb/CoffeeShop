@@ -1,4 +1,4 @@
-@import "style.scss";
+@import 'style.scss';
 
 .header {
 }
@@ -49,3 +49,126 @@ a {
 .header__btn {
   padding: 15px 26px;
 }
+
+.main {
+
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: calc(100vh - 115px);
+}
+
+.main__left, .main__right {
+  height: 460px;
+  margin-top: 15px;
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 460px;
+  gap: 40px;
+}
+
+.left__description {
+  font-family: $CedarvilleCursiveRegular;
+  font-size: 28px;
+}
+
+.left__title {
+  font-family: $JosefinSansBold;
+  font-size: 63px;
+}
+
+.left__btn {
+  padding: 20px 70px;
+  font-size: 20px;
+}
+
+.main__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.right__read-more {
+  width: 159px;
+  height: 157px;
+}
+
+.right__coffee-block {
+  position: relative;
+  width: 410px;
+  height: 466px;
+  background: $light-grey;
+}
+
+.right__coffee-img {
+  position: absolute;
+  left: 39px;
+  top: 140px;
+}
+
+.right__follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-left: 40px;
+}
+
+.follow__icon {
+  height: 32px;
+  width: 32px;
+}
+
+.follow__text {
+  font-family: $JosefinSansRegular;
+  font-size: 28px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: $dark-grey;
+}
+
+.about {
+}
+
+.about__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 100px;
+  height: 450px;
+}
+
+.about__cup-block {
+  width: 380px;
+  height: 287px;
+  background: $light-orange;
+  position: relative;
+}
+
+.cup-block__category-text {
+}
+
+.cup-block__cup {
+}
+
+.about__content {
+}
+
+.about__title {
+}
+
+.about__description {
+}
+

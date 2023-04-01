@@ -29,6 +29,10 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  line-height: 1;
+}
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -36,11 +40,21 @@
 }
 
 .btn {
+  display: inline-block;
   background-color: #2D635E;
   color: #FFFFFF;
   border-radius: 5px;
   font-family: "GeorgeRounded Regular", sans-serif;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-text {
+  font-family: "CedarvilleCursive Regular", sans-serif;
+  font-size: 28px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: #000000;
 }
 
 .header__container {
@@ -79,6 +93,106 @@ a {
 
 .header__btn {
   padding: 15px 26px;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: calc(100vh - 115px);
+}
+
+.main__left, .main__right {
+  height: 460px;
+  margin-top: 15px;
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 460px;
+  gap: 40px;
+}
+
+.left__description {
+  font-family: "CedarvilleCursive Regular", sans-serif;
+  font-size: 28px;
+}
+
+.left__title {
+  font-family: "JosefinSans Bold", sans-serif;
+  font-size: 63px;
+}
+
+.left__btn {
+  padding: 20px 70px;
+  font-size: 20px;
+}
+
+.main__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.right__read-more {
+  width: 159px;
+  height: 157px;
+}
+
+.right__coffee-block {
+  position: relative;
+  width: 410px;
+  height: 466px;
+  background: #E3EBE7;
+}
+
+.right__coffee-img {
+  position: absolute;
+  left: 39px;
+  top: 140px;
+}
+
+.right__follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-left: 40px;
+}
+
+.follow__icon {
+  height: 32px;
+  width: 32px;
+}
+
+.follow__text {
+  font-family: "JosefinSans Regular", sans-serif;
+  font-size: 28px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: #444A4A;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 100px;
+  height: 450px;
+}
+
+.about__cup-block {
+  width: 380px;
+  height: 287px;
+  background: #FAE9E0;
+  position: relative;
 }
 
 /*# sourceMappingURL=index.css.map */

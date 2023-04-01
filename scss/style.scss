@@ -41,7 +41,7 @@
 }
 
 $green: #2D635E;
-$pink: #FAE9E0;
+$light-orange: #FAE9E0;
 $white: #FFFFFF;
 $light-grey: #E3EBE7;
 $dark-grey: #444A4A;
@@ -53,6 +53,9 @@ $JosefinSansBold: 'JosefinSans Bold', sans-serif;
 $GeorgeRoundedRegular: 'GeorgeRounded Regular', sans-serif;
 $CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
 
+* {
+  line-height: 1;
+}
 
 .container {
   max-width: 1230px;
@@ -61,9 +64,19 @@ $CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
 }
 
 .btn {
+  display: inline-block;
   background-color: $green;
   color: $white;
   border-radius: 5px;
   font-family: $GeorgeRoundedRegular;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-text {
+  font-family: $CedarvilleCursiveRegular;
+  font-size: 28px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: $black;
 }
