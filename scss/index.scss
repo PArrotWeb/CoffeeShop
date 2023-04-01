@@ -76,15 +76,15 @@ a {
   gap: 40px;
 }
 
-.left__description {
+.main__left-description {
   font-family: $CedarvilleCursiveRegular;
   font-size: 28px;
 }
 
-.left__title {
+.main__left-title {
 }
 
-.left__btn {
+.main__left-btn {
   font-size: 20px;
   padding: 20px 70px;
 }
@@ -96,25 +96,25 @@ a {
   justify-content: center;
 }
 
-.right__read-more {
+.main__right-more {
   width: 159px;
   height: 157px;
 }
 
-.right__coffee-block {
+.main__coffee-block {
   position: relative;
   width: 410px;
   height: 466px;
   background-color: $light-grey;
 }
 
-.right__coffee-img {
+.main__coffee-block-img {
   position: absolute;
   top: 140px;
   left: 39px;
 }
 
-.right__follow {
+.main__follow {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -122,12 +122,12 @@ a {
   gap: 15px;
 }
 
-.follow__icon {
+.main__follow-icon {
   width: 32px;
   height: 32px;
 }
 
-.follow__text {
+.main__follow-text {
   font-family: $JosefinSansRegular;
   font-size: 28px;
   transform: rotate(180deg);
@@ -158,12 +158,12 @@ a {
   background-color: $light-orange;
 }
 
-.cup-block__category-text {
+.about__cup-block-category {
   position: absolute;
   top: -25px;
 }
 
-.cup-block__cup-img {
+.about__cup-block-img {
   position: absolute;
   top: 78px;
   left: 28px;
