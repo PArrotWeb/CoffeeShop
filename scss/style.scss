@@ -1,4 +1,4 @@
-@import "../css/reset.css";
+@import '../css/reset.css';
 
 @font-face {
   font-family: 'AlegreyaSans Regular';
@@ -40,12 +40,12 @@
   font-style: normal;
 }
 
-$green: #2D635E;
-$light-orange: #FAE9E0;
-$white: #FFFFFF;
-$light-grey: #E3EBE7;
-$dark-grey: #444A4A;
-$black: #000000;
+$green: #2d635e;
+$light-orange: #fae9e0;
+$white: #fff;
+$light-grey: #e3ebe7;
+$dark-grey: #444a4a;
+$black: #000;
 
 $AlegreyaSansRegular: 'AlegreyaSans Regular', sans-serif;
 $JosefinSansRegular: 'JosefinSans Regular', sans-serif;
@@ -64,19 +64,43 @@ $CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
 }
 
 .btn {
+  font-family: $GeorgeRoundedRegular;
   display: inline-block;
-  background-color: $green;
   color: $white;
   border-radius: 5px;
-  font-family: $GeorgeRoundedRegular;
+  background-color: $green;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
 }
 
 .category-text {
   font-family: $CedarvilleCursiveRegular;
   font-size: 28px;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
   transform: rotate(180deg);
   color: $black;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
+
+h1, h2, h3 {
+  font-family: $JosefinSansBold;
+  color: $black;
+}
+
+h1 {
+  font-size: 63px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-family: $AlegreyaSansRegular;
+  font-size: 19px;
+  color: $dark-grey;
+  line-height: 1.9;
 }
