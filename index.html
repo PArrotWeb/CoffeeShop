@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Coffee Shop</title>
-	<link href="assets/itc-slider/itc-slider.css" rel="stylesheet">
-	<script defer src="assets/itc-slider/itc-slider.js"></script>
-	<link href="css/index.css" rel="stylesheet">
+	<link href="assets/itc-slider/itc-slider.min.css" rel="stylesheet">
+	<script defer src="assets/itc-slider/itc-slider.min.js"></script>
+	<link href="css/index.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -52,20 +52,20 @@
 					</a>
 				</div>
 				<div class="main__right">
-					<a href="#about" class="main__right-more-link">
+					<a class="main__right-more-link" href="#about">
 						<img alt="ReadMore" class="main__right-more-img" src="img/ReadMore.svg">
 					</a>
 					<div class="main__coffee-block">
 						<img alt="" class="main__coffee-block-img" src="img/Coffee.svg">
 					</div>
 					<div class="main__follow">
-						<a href="" class="main__follow-link">
+						<a class="main__follow-link" href="">
 							<img alt="" class="main__follow-icon" src="img/TwitterIcon.svg">
 						</a>
-						<a href="" class="main__follow-link">
+						<a class="main__follow-link" href="">
 							<img alt="" class="main__follow-icon" src="img/InstagramIcon.svg">
 						</a>
-						<a href="" class="main__follow-link">
+						<a class="main__follow-link" href="">
 							<img alt="" class="main__follow-icon" src="img/FacebookIcon.svg">
 						</a>
 						<p class="main__follow-text">
@@ -76,7 +76,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="about__container">
 				<div class="about__cup-block">
@@ -84,7 +84,7 @@
 					<img alt="" class="about__cup-block-img" src="img/Cup.svg">
 				</div>
 				<div class="about__content">
-					<h2 class="about__title" id="about">
+					<h2 class="about__title">
 						Coffee Shop Samwayle
 					</h2>
 					<p class="about__description">
@@ -101,11 +101,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="promotion">
+	<section class="promotion" id="promotion">
 		<div class="container">
 			<div class="promotion__container">
 				<div class="promotion__content">
-					<h2 class="promotion__title" id="promotion">
+					<h2 class="promotion__title">
 						Coffee of the day
 					</h2>
 					<p class="promotion__description">
@@ -125,7 +125,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="shop">
+	<section class="shop" id="shop">
 		<div class="container">
 			<div class="shop__container">
 				<div class="itc-slider" data-autoplay="false" data-loop="true" data-slider="itc-slider">
@@ -133,7 +133,7 @@
 						<img alt="" class="itc-slider__btn_prev-image" src="img/Arrow.svg">
 					</button>
 					<div class="itc-slider__wrapper">
-						<div class="itc-slider__items" id="shop">
+						<div class="itc-slider__items">
 							<div class="itc-slider__item">
 								<!-- content 1 slides -->
 								<div class="itc-slider__item-card">
@@ -208,18 +208,18 @@
 			</div>
 		</div>
 	</section>
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<div class="contacts__container">
 				<div class="contacts__map">
-					<img src="img/Map.svg" alt="" class="contacts__map-img">
+					<img alt="" class="contacts__map-img" src="img/Map.jpg">
 					<p class="contacts__map-category category-text">
 						Contacts
 					</p>
 				</div>
 				<div class="contacts__line"></div>
 				<div class="contacts__address">
-					<h2 class="contacts__address-title" id="contacts">
+					<h2 class="contacts__address-title">
 						Our address
 					</h2>
 					<ul class="contacts__address-list">

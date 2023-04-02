@@ -1,4 +1,4 @@
-@import '../css/reset.css';
+@import '../css/reset.min.css';
 
 @font-face {
   font-family: 'AlegreyaSans Regular';
@@ -61,6 +61,10 @@ $CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
 ::selection {
   background-color: $green;
   color: $white;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {

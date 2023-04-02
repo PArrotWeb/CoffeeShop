@@ -1,0 +1,1 @@
+.itc-slider__wrapper{overflow:hidden}.itc-slider__items{display:flex;transition:transform .5s ease;will-change:transform}.itc-slider__transition-none{transition:none}.itc-slider__item{flex:0 0 100%;max-width:100%;user-select:none;will-change:transform}
