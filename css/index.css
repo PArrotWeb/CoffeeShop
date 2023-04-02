@@ -57,7 +57,7 @@
   writing-mode: vertical-lr;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "JosefinSans Bold", sans-serif;
   color: #000;
 }
@@ -68,10 +68,6 @@ h1 {
 
 h2 {
   font-size: 38px;
-}
-
-h3 {
-  font-size: 28px;
 }
 
 p {
@@ -243,7 +239,7 @@ a {
 }
 
 .promotion {
-  height: 450px;
+  height: 400px;
 }
 
 .promotion__container {
@@ -292,6 +288,71 @@ a {
   position: absolute;
   top: -26px;
   left: 390px;
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  height: 550px;
+  background-color: rgba(45, 99, 94, 0.05);
+}
+
+.itc-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.itc-slider__wrapper {
+  display: flex;
+  align-items: center;
+  height: 550px;
+}
+
+.itc-slider__items {
+  max-width: 1080px;
+}
+
+.itc-slider__item {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  padding: 0 15px;
+}
+
+.itc-slider__item-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 458px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 23px 34px rgba(35, 57, 55, 0.17);
+}
+
+.itc-slider__item-title {
+  font-family: "JosefinSans Bold", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: #000;
+}
+
+.itc-slider__item-description {
+  font-size: 19px;
+  line-height: 1.9;
+  margin: 0 60px;
+  text-align: center;
+  color: #444a4a;
+}
+
+.itc-slider__item-btn {
+  font-size: 20px;
+  padding: 20px 70px;
+}
+
+.itc-slider__btn_next-image {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=index.css.map */
