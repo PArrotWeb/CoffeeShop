@@ -1,4 +1,4 @@
-@import '../css/reset.css';
+@import '../css/reset.min.css';
 @font-face {
   font-family: "AlegreyaSans Regular";
   src: url("../fonts/alegreyasans-regular.woff2") format("woff2"), url("../fonts/alegreyasans-regular.woff") format("woff");
@@ -388,6 +388,11 @@ a {
 
 .contacts__map {
   position: relative;
+}
+
+.contacts__map-img {
+  width: 646px;
+  height: 351px;
 }
 
 .contacts__map-category {

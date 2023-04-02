@@ -440,3 +440,4 @@ class ItcSlider {
 }
 
 ItcSlider.createInstances();
+
