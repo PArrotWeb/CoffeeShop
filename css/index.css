@@ -33,6 +33,11 @@
   line-height: 1;
 }
 
+::selection {
+  background-color: #2d635e;
+  color: #fff;
+}
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -80,6 +85,16 @@ button {
   background: none;
   border: none;
   outline: none;
+}
+
+a, button {
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover, a:hover {
+  opacity: 0.75;
 }
 
 .header__container {
@@ -159,7 +174,7 @@ a {
   justify-content: center;
 }
 
-.main__right-more {
+.main__right-more-img {
   width: 159px;
   height: 157px;
 }
@@ -330,7 +345,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 458px;
   border-radius: 25px;
   background-color: #fff;
@@ -338,6 +353,7 @@ a {
 }
 
 .itc-slider__item-title {
+  margin-top: 44px;
   font-family: "JosefinSans Bold", sans-serif;
   font-size: 28px;
   text-align: center;
@@ -353,6 +369,7 @@ a {
 }
 
 .itc-slider__item-btn {
+  margin-bottom: 47px;
   font-size: 20px;
   padding: 20px 70px;
 }
@@ -399,6 +416,13 @@ a {
   color: #444a4a;
   margin-bottom: 40px;
   margin-left: 3px;
+}
+
+.footer__container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.css.map */

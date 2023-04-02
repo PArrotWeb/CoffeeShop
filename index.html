@@ -17,20 +17,20 @@
 			<nav class="nav">
 				<ul class="nav__list">
 					<li class="nav__item">
-						<a class="nav__link" href="">About Us</a>
+						<a class="nav__link" href="#about">About Us</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="">Promotion</a>
+						<a class="nav__link" href="#promotion">Promotion</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="">Shop</a>
+						<a class="nav__link" href="#shop">Shop</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="">Contacts</a>
+						<a class="nav__link" href="#contacts">Contacts</a>
 					</li>
 				</ul>
 			</nav>
-			<a class="header__btn btn" href="#">
+			<a class="header__btn btn" href="">
 				Contact Us
 			</a>
 		</div>
@@ -52,14 +52,22 @@
 					</a>
 				</div>
 				<div class="main__right">
-					<img alt="ReadMore" class="main__right-more" src="img/ReadMore.svg">
+					<a href="#about" class="main__right-more-link">
+						<img alt="ReadMore" class="main__right-more-img" src="img/ReadMore.svg">
+					</a>
 					<div class="main__coffee-block">
 						<img alt="" class="main__coffee-block-img" src="img/Coffee.svg">
 					</div>
 					<div class="main__follow">
-						<img alt="" class="main__follow-icon" src="img/TwitterIcon.svg">
-						<img alt="" class="main__follow-icon" src="img/InstagramIcon.svg">
-						<img alt="" class="main__follow-icon" src="img/FacebookIcon.svg">
+						<a href="" class="main__follow-link">
+							<img alt="" class="main__follow-icon" src="img/TwitterIcon.svg">
+						</a>
+						<a href="" class="main__follow-link">
+							<img alt="" class="main__follow-icon" src="img/InstagramIcon.svg">
+						</a>
+						<a href="" class="main__follow-link">
+							<img alt="" class="main__follow-icon" src="img/FacebookIcon.svg">
+						</a>
 						<p class="main__follow-text">
 							Follow us
 						</p>
@@ -76,7 +84,7 @@
 					<img alt="" class="about__cup-block-img" src="img/Cup.svg">
 				</div>
 				<div class="about__content">
-					<h2 class="about__title">
+					<h2 class="about__title" id="about">
 						Coffee Shop Samwayle
 					</h2>
 					<p class="about__description">
@@ -97,7 +105,7 @@
 		<div class="container">
 			<div class="promotion__container">
 				<div class="promotion__content">
-					<h2 class="promotion__title">
+					<h2 class="promotion__title" id="promotion">
 						Coffee of the day
 					</h2>
 					<p class="promotion__description">
@@ -125,7 +133,7 @@
 						<img alt="" class="itc-slider__btn_prev-image" src="img/Arrow.svg">
 					</button>
 					<div class="itc-slider__wrapper">
-						<div class="itc-slider__items">
+						<div class="itc-slider__items" id="shop">
 							<div class="itc-slider__item">
 								<!-- content 1 slides -->
 								<div class="itc-slider__item-card">
@@ -211,7 +219,7 @@
 				</div>
 				<div class="contacts__line"></div>
 				<div class="contacts__address">
-					<h2 class="contacts__address-title">
+					<h2 class="contacts__address-title" id="contacts">
 						Our address
 					</h2>
 					<ul class="contacts__address-list">
@@ -233,5 +241,14 @@
 		</div>
 	</section>
 </main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__container">
+			<p class="footer__text">
+				2023 (c) - Samwyle bandtitos
+			</p>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
