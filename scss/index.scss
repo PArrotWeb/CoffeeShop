@@ -96,7 +96,11 @@ a {
   justify-content: center;
 }
 
-.main__right-more {
+.main__right-more-link {
+
+}
+
+.main__right-more-img {
   width: 159px;
   height: 157px;
 }
@@ -120,6 +124,10 @@ a {
   justify-content: flex-end;
   margin-left: 40px;
   gap: 15px;
+}
+
+.main__follow-link {
+  
 }
 
 .main__follow-icon {
@@ -311,7 +319,6 @@ a {
 }
 
 .itc-slider__btn:hover {
-
 }
 
 .itc-slider__btn_prev {

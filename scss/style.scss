@@ -58,6 +58,11 @@ $CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
   line-height: 1;
 }
 
+::selection {
+  background-color: $green;
+  color: $white;
+}
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -105,4 +110,14 @@ button {
   background: none;
   border: none;
   outline: none;
+}
+
+a, button {
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover, a:hover {
+  opacity: 0.75;
 }
