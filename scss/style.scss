@@ -41,6 +41,7 @@
 }
 
 $green: #2d635e;
+$light-green: rgba(45, 99, 94, 5%);
 $light-orange: #fae9e0;
 $white: #fff;
 $light-grey: #e3ebe7;
@@ -81,7 +82,7 @@ $CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
   writing-mode: vertical-lr;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: $JosefinSansBold;
   color: $black;
 }
@@ -92,10 +93,6 @@ h1 {
 
 h2 {
   font-size: 38px;
-}
-
-h3 {
-  font-size: 28px;
 }
 
 p {
