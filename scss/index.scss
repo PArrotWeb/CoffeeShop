@@ -282,7 +282,7 @@ a {
   height: 458px;
   border-radius: 25px;
   background-color: $white;
-  box-shadow: 0 23px 34px rgba(35, 57, 55, 0.17);
+  box-shadow: 0 13px 24px rgba(35, 57, 55, 0.17);
 }
 
 .itc-slider__item-title {
@@ -324,4 +324,53 @@ a {
 
 .itc-slider__btn_next-image {
   transform: rotate(180deg);
+}
+
+.contacts {
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 600px;
+  gap: 42px;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map-img {
+}
+
+.contacts__map-category {
+  position: absolute;
+  top: -21px;
+  left: 625px;
+}
+
+.contacts__line {
+  height: 279px;
+  width: 100px;
+  border-top: 2px solid $dark-grey;
+}
+
+.contacts__address {
+  height: 351px;
+}
+
+.contacts__address-title {
+}
+
+.contacts__address-list {
+  margin-top: 44px;
+}
+
+.contacts__address-item {
+  font-family: $AlegreyaSansRegular;
+  font-size: 19px;
+  color: $dark-grey;
+  margin-bottom: 40px;
+  margin-left: 3px;
 }
