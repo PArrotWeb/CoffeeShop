@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('.shop__slider').slick(
         {
-            slidesToShow: 1,
-            touchThreshold: 20,
+            slidesToShow: 3,
+            touchThreshold: 50,
             responsive: [
                 {
                     breakpoint: 1100,
