@@ -638,6 +638,9 @@ a {
     width: 339px;
     height: 245px;
   }
+  .about__content {
+    padding-left: 0;
+  }
   .promotion {
     margin-bottom: 45px;
   }
@@ -659,6 +662,9 @@ a {
   }
   .promotion__content {
     padding-right: 0;
+  }
+  .promotion__btn {
+    display: none;
   }
   .contacts {
     margin-bottom: 45px;
@@ -705,6 +711,11 @@ a {
 @media (max-width: 768px) {
   .shop__slider {
     max-width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .shop__slider-item-card {
+    box-shadow: none;
   }
 }
 
