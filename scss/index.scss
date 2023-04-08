@@ -15,14 +15,14 @@ a {
   height: 115px;
 }
 
-.logo {
+.header__logo {
 }
 
 .logo__img {
   display: block;
 }
 
-.nav {
+.header__nav {
   font-family: $JosefinSansRegular;
   font-size: 16px;
   line-height: 1;
@@ -32,24 +32,127 @@ a {
   color: $black;
 }
 
-.nav__list {
+.header__nav-list {
   display: flex;
   align-items: center;
   gap: 90px;
 }
 
-.nav__list:last-child {
+.header__nav-list:last-child {
   gap: 57px;
 }
 
-.nav__item {
+.header__nav-item {
   flex-shrink: 0;
 }
 
-.nav__link {
+.header__nav-item-link {
 }
 
-.nav__btn {
+.header__open-btn {
+  display: none;
+  margin-bottom: 2px;
+}
+
+.header__open-img {
+
+}
+
+.header__mob {
+  transform: translateX(-100%);
+  background-color: $white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  padding: 40px 30px;
+
+}
+
+.header__mob.remove, .header__mob.active {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.header__mob.remove {
+  transform: translateX(-100%);
+}
+
+.header__mob.active {
+  transform: translateX(0);
+}
+
+.header__mob-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mob-top-mark {
+  width: 24px;
+  height: 24px;
+}
+
+.header__mob-top-link {
+}
+
+.header__mob-top-logo {
+}
+
+.header__mob-top-btn {
+}
+
+.header__mob-top-btn-img {
+}
+
+.header__mob-nav {
+  flex-shrink: 2;
+  height: 450px;
+}
+
+.header__mob-nav-list {
+  height: 100%;
+  font-family: $JosefinSansRegular;
+  font-size: 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mob-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__mob-nav-item-link {
+}
+
+.header__mob-follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header__mob-follow-link {
+}
+
+.header__mob-follow-icon {
+  height: 45px;
+  width: 45px;
+}
+
+.header__nav-item-btn {
   display: flex;
   align-items: center;
   padding: 15px 26px;
@@ -410,12 +513,29 @@ a {
 
 @media (max-width: 1100px) {
   .shop__slider {
-    max-width: 782px;
+	max-width: 782px;
   }
 }
 
 @media (max-width: 980px) {
+  
+}
 
+@media (max-width: 880px) {
+  // сделать бургер меню и скрыть прошлое меню
+  .header__container {
+    justify-content: flex-start;
+    height: 80px;
+    gap: 40px;
+  }
+
+  .header__nav {
+	display: none;
+  }
+
+  .header__open-btn {
+	display: block;
+  }
 }
 
 @media (max-width: 768px) {

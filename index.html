@@ -9,30 +9,71 @@
 <header class="header">
 	<div class="container">
 		<div class="header__container">
-			<a class="logo" href="index.html">
-				<img alt="Logo" class="logo__img" src="img/Logo.svg">
+			<button class="header__open-btn" onclick="openMenu()">
+				<img src="img/OpenMenuIcon.svg" alt="" class="header__open-img">
+			</button>
+			<a class="header__logo" href="index.html">
+				<img alt="Logo" class="header__logo-img" src="img/Logo.svg">
 			</a>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a class="nav__link" href="#about">About Us</a>
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#about">About Us</a>
 					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#promotion">Promotion</a>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#promotion">Promotion</a>
 					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#shop">Shop</a>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#shop">Shop</a>
 					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#contacts">Contacts</a>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#contacts">Contacts</a>
 					</li>
-					<li class="nav__item">
-						<a class="nav__btn btn" href="">
+					<li class="header__nav-item">
+						<a class="header__nav-item-btn btn" href="">
 							Contact Us
 						</a>
 					</li>
 				</ul>
 			</nav>
+		</div>
+	</div>
+	<div class="header__mob">
+		<div class="header__mob-top">
+			<div class="header__mob-top-mark"></div>
+			<a href="" class="header__mob-top-link">
+				<img src="img/Logo.svg" alt="" class="header__mob-top-logo">
+			</a>
+			<button class="header__mob-top-btn" onclick="closeMenu()">
+				<img src="img/CloseIcon.svg" alt="" class="header__mob-top-btn-img">
+			</button>
+		</div>
+		<nav class="header__mob-nav">
+				<ul class="header__mob-nav-list">
+					<li class="header__mob-nav-item">
+						<a class="header__mob-nav-item-link" href="#about">About Us</a>
+					</li>
+					<li class="header__mob-nav-item">
+						<a class="header__mob-nav-item-link" href="#promotion">Promotion</a>
+					</li>
+					<li class="header__mob-nav-item">
+						<a class="header__mob-nav-item-link" href="#shop">Shop</a>
+					</li>
+					<li class="header__mob-nav-item">
+						<a class="header__mob-nav-item-link" href="#contacts">Contacts</a>
+					</li>
+				</ul>
+		</nav>
+		<div class="header__mob-follow">
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/InstagramIcon.svg">
+			</a>
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/FacebookIcon.svg">
+			</a>
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/TwitterIcon.svg">
+			</a>
 		</div>
 	</div>
 </header>
@@ -237,5 +278,6 @@
 <script src="scripts/jquery-3.6.4.min.js"></script>
 <script src="scripts/slick.min.js"></script>
 <script src="scripts/slider.min.js"></script>
+<script src="scripts/burger.min.js"></script>
 </body>
 </html>
