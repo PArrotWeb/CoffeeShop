@@ -51,7 +51,13 @@ a {
 
 .header__open-btn {
   display: none;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+}
+
+.header__mark {
+  display: none;
+  width: 27px;
+  height: 27px;
 }
 
 .header__open-img {
@@ -59,19 +65,19 @@ a {
 }
 
 .header__mob {
-  transform: translateX(-100%);
-  background-color: $white;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  z-index: 20;
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  z-index: 20;
+  width: 100%;
+  height: 100%;
   padding: 40px 30px;
+  transform: translateX(-100%);
+  background-color: $white;
 
 }
 
@@ -90,9 +96,9 @@ a {
 
 .header__mob-top {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .header__mob-top-mark {
@@ -118,20 +124,20 @@ a {
 }
 
 .header__mob-nav-list {
-  height: 100%;
   font-family: $JosefinSansRegular;
   font-size: 36px;
-  text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  text-align: center;
 }
 
 .header__mob-nav-item {
-  height: 100%;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .header__mob-nav-item-link {
@@ -148,8 +154,8 @@ a {
 }
 
 .header__mob-follow-icon {
-  height: 45px;
   width: 45px;
+  height: 45px;
 }
 
 .header__nav-item-btn {
@@ -186,6 +192,8 @@ a {
 }
 
 .main__left-title {
+  font-family: $JosefinSansRegular;
+  font-size: 63px;
 }
 
 .main__left-btn {
@@ -365,9 +373,9 @@ a {
   align-items: center;
   justify-content: center;
   min-width: 0;
+  max-width: 1660px;
   user-select: none;
   gap: 20px;
-  max-width: 1660px;
 }
 
 .shop__slider-item {
@@ -465,6 +473,9 @@ a {
 .contacts__map-img {
   width: 646px;
   height: 351px;
+  border-radius: 5px;
+  background-image: url('../img/Map.jpg');
+  background-size: cover;
 }
 
 .contacts__map-category {
@@ -498,6 +509,16 @@ a {
   color: $dark-grey;
 }
 
+.contacts__address-item-btn {
+  display: none;
+  color: $dark-grey;
+  background-color: $white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.17);
+  width: 189px;
+  height: 53px;
+  font-size: 16px;
+}
+
 .footer {
 }
 
@@ -518,15 +539,13 @@ a {
 }
 
 @media (max-width: 980px) {
-  
-}
+  h2 {
+	font-size: 36px;
+  }
 
-@media (max-width: 880px) {
-  // сделать бургер меню и скрыть прошлое меню
   .header__container {
-    justify-content: flex-start;
-    height: 80px;
-    gap: 40px;
+	height: 80px;
+	gap: 40px;
   }
 
   .header__nav {
@@ -534,6 +553,143 @@ a {
   }
 
   .header__open-btn {
+	display: block;
+  }
+
+  .header__mark {
+	display: block;
+  }
+
+  .main__container {
+	flex-direction: column;
+  }
+
+  .main__container:last-child {
+	gap: 40px;
+  }
+
+  .main__left {
+	align-items: center;
+	gap: 20px;
+	height: 450px;
+  }
+
+  .main__left-description {
+	font-size: 19px;
+  }
+
+  .main__left-title {
+	font-size: 54px;
+  }
+
+  .main__right {
+	display: none;
+  }
+
+  .category-text {
+	display: none;
+  }
+
+  .about {
+	margin-bottom: 45px;
+  }
+
+  .about__container {
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	padding: 0 -40px;
+  }
+
+  .about__cup-block {
+	width: 100vw;
+	height: 248px;
+  }
+
+  .about__cup-block-img {
+	top: -21px;
+	left: calc(50% - 170px);
+	width: 339px;
+	height: 245px;
+  }
+
+  .promotion {
+	margin-bottom: 45px;
+  }
+
+  .promotion__container {
+	flex-direction: column-reverse;
+	align-items: center;
+	gap: 50px;
+	padding: 0 -40px;
+  }
+
+  .promotion__cup-block {
+	width: 100vw;
+	height: 287px;
+  }
+
+  .promotion__cup-block-img {
+	top: -16px;
+	left: calc(50% - 118px);
+	width: 236px;
+	height: 320px;
+  }
+
+  .promotion__content {
+	padding-right: 0;
+  }
+
+  .contacts {
+	margin-bottom: 45px;
+	padding-top: 45px;
+  }
+
+  .contacts__container {
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 40px;
+  }
+
+  .contacts__map-img {
+	width: 337px;
+	height: 300px;
+  }
+
+  .contacts__line {
+	display: none;
+  }
+
+  .contacts__address {
+	align-items: center;
+    height: 220px;
+  }
+
+  .contacts__address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+  }
+
+  .contacts__address-title {
+    font-size: 32px;
+  }
+
+  .contacts__address-title, .contacts__address-list {
+	text-align: center;
+  }
+
+  .contacts__address-item:nth-child(3), .contacts__address-item:nth-child(4) {
+	display: none;
+  }
+
+  .contacts__address-item:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+
+  .contacts__address-item-btn {
 	display: block;
   }
 }

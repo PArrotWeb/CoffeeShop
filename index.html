@@ -36,6 +36,7 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="header__mark"></div>
 		</div>
 	</div>
 	<div class="header__mob">
@@ -49,20 +50,23 @@
 			</button>
 		</div>
 		<nav class="header__mob-nav">
-				<ul class="header__mob-nav-list">
-					<li class="header__mob-nav-item">
-						<a class="header__mob-nav-item-link" href="#about">About Us</a>
-					</li>
-					<li class="header__mob-nav-item">
-						<a class="header__mob-nav-item-link" href="#promotion">Promotion</a>
-					</li>
-					<li class="header__mob-nav-item">
-						<a class="header__mob-nav-item-link" href="#shop">Shop</a>
-					</li>
-					<li class="header__mob-nav-item">
-						<a class="header__mob-nav-item-link" href="#contacts">Contacts</a>
-					</li>
-				</ul>
+			<ul class="header__mob-nav-list">
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="" onclick="closeMenu()">Home</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#about" onclick="closeMenu()">About Us</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#promotion" onclick="closeMenu()">Promotion</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#shop" onclick="closeMenu()">Shop</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#contacts" onclick="closeMenu()">Contacts</a>
+				</li>
+			</ul>
 		</nav>
 		<div class="header__mob-follow">
 			<a class="header__mob-follow-link" href="">
@@ -236,7 +240,7 @@
 		<div class="container">
 			<div class="contacts__container">
 				<div class="contacts__map">
-					<img alt="" class="contacts__map-img" src="img/Map.jpg">
+					<div class="contacts__map-img"></div>
 					<p class="contacts__map-category category-text">
 						Contacts
 					</p>
@@ -258,6 +262,11 @@
 						</li>
 						<li class="contacts__address-item">
 							5627 Van Doren St, Queens
+						</li>
+						<li class="contacts__address-item">
+							<button class="btn contacts__address-item-btn ">
+								See more address 	→
+							</button>
 						</li>
 					</ul>
 				</div>
