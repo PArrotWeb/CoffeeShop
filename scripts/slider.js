@@ -3,20 +3,20 @@ $(document).ready(function () {
         {
             slidesToShow: 1,
             touchThreshold: 20,
-            // responsive: [
-            //     {
-            //         breakpoint: 1100,
-            //         settings: {
-            //             slidesToShow: 2
-            //         },
-            //     },
-            //     {
-            //         breakpoint: 768,
-            //         settings: {
-            //             slidesToShow: 1
-            //         },
-            //     }
-            // ]
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 2
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    },
+                }
+            ]
         }
     );
 
