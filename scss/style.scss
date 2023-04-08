@@ -59,8 +59,8 @@ $CedarvilleCursiveRegular: 'CedarvilleCursive Regular', sans-serif;
 }
 
 ::selection {
-  background-color: $green;
   color: $white;
+  background-color: $green;
 }
 
 body {
@@ -111,15 +111,15 @@ p {
 }
 
 button {
-  background: none;
   border: none;
   outline: none;
+  background: none;
 }
 
 a, button {
-  transition-property: opacity;
-  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 button:hover, a:hover {

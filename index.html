@@ -3,35 +3,80 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Coffee Shop</title>
-	<link href="assets/itc-slider/itc-slider.min.css" rel="stylesheet">
-	<script defer src="assets/itc-slider/itc-slider.min.js"></script>
 	<link href="css/index.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
 	<div class="container">
 		<div class="header__container">
-			<a class="logo" href="index.html">
-				<img alt="Logo" class="logo__img" src="img/Logo.svg">
+			<button class="header__open-btn" onclick="openMenu()">
+				<img src="img/OpenMenuIcon.svg" alt="" class="header__open-img">
+			</button>
+			<a class="header__logo" href="index.html">
+				<img alt="Logo" class="header__logo-img" src="img/Logo.svg">
 			</a>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a class="nav__link" href="#about">About Us</a>
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#about">About Us</a>
 					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#promotion">Promotion</a>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#promotion">Promotion</a>
 					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#shop">Shop</a>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#shop">Shop</a>
 					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#contacts">Contacts</a>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#contacts">Contacts</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-item-btn btn" href="">
+							Contact Us
+						</a>
 					</li>
 				</ul>
 			</nav>
-			<a class="header__btn btn" href="">
-				Contact Us
+			<div class="header__mark"></div>
+		</div>
+	</div>
+	<div class="header__mob">
+		<div class="header__mob-top">
+			<div class="header__mob-top-mark"></div>
+			<a href="" class="header__mob-top-link">
+				<img src="img/Logo.svg" alt="" class="header__mob-top-logo">
+			</a>
+			<button class="header__mob-top-btn" onclick="closeMenu()">
+				<img src="img/CloseIcon.svg" alt="" class="header__mob-top-btn-img">
+			</button>
+		</div>
+		<nav class="header__mob-nav">
+			<ul class="header__mob-nav-list">
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="" onclick="closeMenu()">Home</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#about" onclick="closeMenu()">About Us</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#promotion" onclick="closeMenu()">Promotion</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#shop" onclick="closeMenu()">Shop</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#contacts" onclick="closeMenu()">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__mob-follow">
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/InstagramIcon.svg">
+			</a>
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/FacebookIcon.svg">
+			</a>
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/TwitterIcon.svg">
 			</a>
 		</div>
 	</div>
@@ -111,7 +156,7 @@
 					<p class="promotion__description">
 						Americano coffee (Italian: Caffè Americano) is an espresso diluted with hot water. The presence of foam
 						(cream) depends on how coffee and water are mixed.
-						Attention! The concepts of “American” and “American coffee” should not be confused. n the second case, this
+						Attention! The concepts of “American” and “American coffee” should not be confused. n the seco case, this
 						refers not to diluted espresso, but to a drink prepared through a filter system.
 					</p>
 					<a class="promotion__btn btn" href="">
@@ -128,82 +173,65 @@
 	<section class="shop" id="shop">
 		<div class="container">
 			<div class="shop__container">
-				<div class="itc-slider" data-autoplay="false" data-loop="true" data-slider="itc-slider">
-					<button class="itc-slider__btn itc-slider__btn_prev">
-						<img alt="" class="itc-slider__btn_prev-image" src="img/Arrow.svg">
-					</button>
-					<div class="itc-slider__wrapper">
-						<div class="itc-slider__items">
-							<div class="itc-slider__item">
-								<!-- content 1 slides -->
-								<div class="itc-slider__item-card">
-									<p class="itc-slider__item-title">
-										Americano
-									</p>
-									<p class="itc-slider__item-description">
-										The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
-										recommended
-										to take fat milk - at least 3.2%. In addition to it, milk foam.
-									</p>
-									<a class="itc-slider__item-btn btn" href="">
-										Order now
-									</a>
-								</div>
-
-							</div>
-							<div class="itc-slider__item">
-								<!-- content 2 slides -->
-								<div class="itc-slider__item-card">
-									<p class="itc-slider__item-title">
-										Latte
-									</p>
-									<p class="itc-slider__item-description">
-										The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
-										recommended
-										to take fat milk - at least 3.2%. In addition to it, milk foam.
-									</p>
-									<a class="itc-slider__item-btn btn" href="">
-										Order now
-									</a>
-								</div>
-
-							</div>
-							<div class="itc-slider__item">
-								<!-- content 3 slides -->
-								<div class="itc-slider__item-card">
-									<p class="itc-slider__item-title">
-										Espresso
-									</p>
-									<p class="itc-slider__item-description">
-										Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is
-										passed through pressed ground beans at a pressure.
-									</p>
-									<a class="itc-slider__item-btn btn" href="">
-										Order now
-									</a>
-								</div>
-
-							</div>
-							<div class="itc-slider__item">
-								<!-- content 4 slides -->
-								<div class="itc-slider__item-card">
-									<p class="itc-slider__item-title">
-										Cappuccino
-									</p>
-									<p class="itc-slider__item-description">
-										Cappuccino - espresso, steamed milk, and frothed milk combined in equal parts for a creamy and
-										velvety texture.
-									</p>
-									<a class="itc-slider__item-btn btn" href="">
-										Order now
-									</a>
-								</div>
-							</div>
+				<div class="shop__slider">
+					<div class="shop__slider-item">
+						<div class="shop__slider-item-card">
+							<p class="shop__slider-item-title">
+								Americano
+							</p>
+							<p class="shop__slider-item-description">
+								The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+								recommended
+								to take fat milk - at least 3.2%. In addition to it, milk foam.
+							</p>
+							<a class="shop__slider-item-btn btn" href="">
+								Order now
+							</a>
 						</div>
 					</div>
-					<button class="itc-slider__btn itc-slider__btn_next">
-						<img alt="" class="itc-slider__btn_next-image" src="img/Arrow.svg">
-					</button>
+					<div class="shop__slider-item">
+						<div class="shop__slider-item-card">
+							<p class="shop__slider-item-title">
+								Latte
+							</p>
+							<p class="shop__slider-item-description">
+								The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+								recommended
+								to take fat milk - at least 3.2%. In addition to it, milk foam.
+							</p>
+							<a class="shop__slider-item-btn btn" href="">
+								Order now
+							</a>
+						</div>
+					</div>
+					<div class="shop__slider-item">
+						<div class="shop__slider-item-card">
+							<p class="shop__slider-item-title">
+								Espresso
+							</p>
+							<p class="shop__slider-item-description">
+								Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is
+								passed through pressed ground beans at a pressure.
+							</p>
+							<a class="shop__slider-item-btn btn" href="">
+								Order now
+							</a>
+						</div>
+					</div>
+					<div class="shop__slider-item">
+						<div class="shop__slider-item-card">
+							<p class="shop__slider-item-title">
+								Cappuccino
+							</p>
+							<p class="shop__slider-item-description">
+								Cappuccino - espresso, steamed milk, and frothed milk combined in equal parts for a creamy and
+								velvety texture.
+							</p>
+							<a class="shop__slider-item-btn btn" href="">
+								Order now
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -212,7 +240,7 @@
 		<div class="container">
 			<div class="contacts__container">
 				<div class="contacts__map">
-					<img alt="" class="contacts__map-img" src="img/Map.jpg">
+					<div class="contacts__map-img"></div>
 					<p class="contacts__map-category category-text">
 						Contacts
 					</p>
@@ -235,6 +263,11 @@
 						<li class="contacts__address-item">
 							5627 Van Doren St, Queens
 						</li>
+						<li class="contacts__address-item">
+							<button class="btn contacts__address-item-btn ">
+								See more address 	→
+							</button>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -250,5 +283,10 @@
 		</div>
 	</div>
 </footer>
+
+<script src="scripts/jquery-3.6.4.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/slider.min.js"></script>
+<script src="scripts/burger.min.js"></script>
 </body>
 </html>
