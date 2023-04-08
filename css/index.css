@@ -450,7 +450,7 @@ a {
   flex-shrink: 0;
   width: 22px;
   height: 38px;
-  background: url(../img/arrow.svg) no-repeat center;
+  background: url(../img/Arrow.svg) no-repeat center;
 }
 
 .slick-next {
