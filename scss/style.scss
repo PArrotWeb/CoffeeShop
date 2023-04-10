@@ -125,3 +125,8 @@ a, button {
 button:hover, a:hover {
   opacity: 0.75;
 }
+
+button:focus-visible, a:focus-visible {
+  outline: $dark-grey 3px solid;
+  outline-offset: -3px;
+}

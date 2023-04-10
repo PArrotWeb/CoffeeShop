@@ -490,7 +490,7 @@ a {
 }
 
 .contacts__address {
-  height: 351px;
+  //height: 351px;
 }
 
 .contacts__address-title {
@@ -506,6 +506,10 @@ a {
   margin-bottom: 40px;
   margin-left: 3px;
   color: $dark-grey;
+}
+
+.contacts__address-item:last-child {
+  margin-bottom: 0;
 }
 
 .contacts__address-item-btn {
@@ -668,7 +672,7 @@ a {
 
   .contacts__address {
 	align-items: center;
-    height: 220px;
+    //height: 220px;
   }
 
   .contacts__address-list {
@@ -690,9 +694,9 @@ a {
 	display: none;
   }
 
-  .contacts__address-item:nth-child(2) {
-    margin-bottom: 20px;
-  }
+  //.contacts__address-item:nth-child(2) {
+  //  margin-bottom: 20px;
+  //}
 
 
   .contacts__address-item-btn {

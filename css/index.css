@@ -102,6 +102,11 @@ button:hover, a:hover {
   opacity: 0.75;
 }
 
+button:focus-visible, a:focus-visible {
+  outline: #444a4a 3px solid;
+  outline-offset: -3px;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -540,10 +545,6 @@ a {
   border-top: 2px solid #444a4a;
 }
 
-.contacts__address {
-  height: 351px;
-}
-
 .contacts__address-list {
   margin-top: 44px;
 }
@@ -554,6 +555,10 @@ a {
   margin-bottom: 40px;
   margin-left: 3px;
   color: #444a4a;
+}
+
+.contacts__address-item:last-child {
+  margin-bottom: 0;
 }
 
 .contacts__address-item-btn {
@@ -683,7 +688,6 @@ a {
   }
   .contacts__address {
     align-items: center;
-    height: 220px;
   }
   .contacts__address-list {
     display: flex;
@@ -699,9 +703,6 @@ a {
   }
   .contacts__address-item:nth-child(3), .contacts__address-item:nth-child(4) {
     display: none;
-  }
-  .contacts__address-item:nth-child(2) {
-    margin-bottom: 20px;
   }
   .contacts__address-item-btn {
     display: block;
