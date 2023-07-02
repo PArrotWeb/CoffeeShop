@@ -1,16 +1,16 @@
 # CoffeeShop
-Это сайт онлайн продажи кофе.
+Это сайт онлайн продажи кофе (Учебный проект).     
 
 ### Стек технологий:
 - HTML, CSS, SCSS, JS
-- ASP.NET Minimal WebApi
+- ASP.NET Minimal API
 - Windows Server. IIS
 - EntityFramework
 - MySql
 - Swagger
 
 ### Особенности:
-- Для простоты 
+- Для минимизации кода и ускорения разработки был выбран Minimal API
 - Документация Swagger
 
 ### Функционал приложения:
@@ -20,5 +20,5 @@
 - Конвертация валюты с помощью ЦБ определенной страны. По умолчанию ЦБ РФ
 
 ---
-**PArrotWeb © 2022**  
+**PArrotWeb © 2023**  
 (parrotweb44@gmail.com)
