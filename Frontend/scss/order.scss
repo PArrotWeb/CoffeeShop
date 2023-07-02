@@ -1,0 +1,175 @@
+@import 'style.scss';
+
+body {
+  background-color: $light-green;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(35, 57, 55, 0.17);
+}
+
+.header__container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header__title {
+  margin-top: 3px;
+}
+
+.header__empty,
+.header__back-btn {
+  width: 28px;
+  height: 28px;
+}
+
+.header__empty {
+}
+
+.header__back-btn {
+  background-image: url('../img/CloseIcon.svg');
+  background-size: cover;
+}
+
+.main {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.form__information {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.form__title {
+  font-size: 28px;
+  text-align: center;
+  width: 100%;
+}
+
+.form__contact,
+.form__order {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+
+.form__block {
+  width: 100%;
+}
+
+.form__label {
+  width: 100%;
+  font-family: $AlegreyaSansRegular;
+  font-size: 15px;
+  color: $dark-grey;
+}
+
+.form__block-input,
+.form__select {
+  margin-top: 3px;
+  width: 100%;
+  height: 47px;
+  box-shadow: 0 1px 4px rgba(35, 57, 55, 0.17);
+  border-radius: 5px;
+  background-color: $white;
+  font-family: $JosefinSansRegular;
+  font-size: 19px;
+  color: $black;
+  padding: 0 10px;
+}
+
+.form__block-input {
+}
+
+.form__block-input::placeholder {
+  color: $light-grey;
+}
+
+.form__select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form__select::-ms-expand {
+  display: none;
+}
+
+.form__select:not([multiple]) {
+  padding-right: 32px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) 50%;
+  background-size: 10px;
+  background-image: url('../img/DropDownArrow.svg');
+}
+
+
+.form__select-option,
+.form__select-option--default {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form__select-option {
+
+}
+
+.form__select-option {
+}
+
+.form__select-option--default {
+}
+
+.form__order {
+}
+
+.form__contact {
+}
+
+.form__btn {
+  font-family: $JosefinSansRegular;
+  padding: 15px 60px;
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .form__information {
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+  }
+
+  .form {
+	margin: 70px 0;
+  }
+
+  .form__contact,
+  .form__order {
+	width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form__contact,
+  .form__order {
+	width: 350px;
+  }
+}

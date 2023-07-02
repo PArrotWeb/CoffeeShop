@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport"
+	      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Coffee Shop</title>
+	<link rel="shortcut icon" href="img/LogoIcon.svg" type="image/svg">
+	<link href="css/index.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="header__container">
+			<button class="header__open-btn" onclick="openMenu()">
+				<img src="img/OpenMenuIcon.svg" alt="" class="header__open-img">
+			</button>
+			<a class="header__logo" href="index.html">
+				<img alt="Logo" class="header__logo-img" src="img/Logo.svg">
+			</a>
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#about">About Us</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#promotion">Promotion</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#shop">Shop</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-item-link" href="#contacts">Contacts</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-item-btn btn" href="order.html" onclick="setValueToSelect(null)">
+							Place Order
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__mark"></div>
+		</div>
+	</div>
+	<div class="header__mob">
+		<div class="header__mob-top">
+			<div class="header__mob-top-mark"></div>
+			<a href="" class="header__mob-top-link">
+				<img src="img/Logo.svg" alt="" class="header__mob-top-logo">
+			</a>
+			<button class="header__mob-top-btn" onclick="closeMenu()">
+				<img src="img/CloseIcon.svg" alt="" class="header__mob-top-btn-img">
+			</button>
+		</div>
+		<nav class="header__mob-nav">
+			<ul class="header__mob-nav-list">
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="" onclick="closeMenu()">Home</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#about" onclick="closeMenu()">About Us</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#promotion" onclick="closeMenu()">Promotion</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#shop" onclick="closeMenu()">Shop</a>
+				</li>
+				<li class="header__mob-nav-item">
+					<a class="header__mob-nav-item-link" href="#contacts" onclick="closeMenu()">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__mob-follow">
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/InstagramIcon.svg">
+			</a>
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/FacebookIcon.svg">
+			</a>
+			<a class="header__mob-follow-link" href="">
+				<img alt="" class="header__mob-follow-icon" src="img/TwitterIcon.svg">
+			</a>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="main">
+		<div class="container">
+			<div class="main__container">
+				<div class="main__left">
+					<p class="main__left-description">
+						Drink coffee, enjoy with Samwayle
+					</p>
+					<h1 class="main__left-title">
+						Coffee Shop
+					</h1>
+					<a class="main__left-btn btn" href="order.html" onclick="setValueToSelect(null)">
+						Order here
+					</a>
+				</div>
+				<div class="main__right">
+					<a class="main__right-more-link" href="#about">
+						<img alt="ReadMore" class="main__right-more-img" src="img/ReadMore.svg">
+					</a>
+					<div class="main__coffee-block">
+						<img alt="" class="main__coffee-block-img" src="img/Coffee.svg">
+					</div>
+					<div class="main__follow">
+						<a class="main__follow-link" href="">
+							<img alt="" class="main__follow-icon" src="img/TwitterIcon.svg">
+						</a>
+						<a class="main__follow-link" href="">
+							<img alt="" class="main__follow-icon" src="img/InstagramIcon.svg">
+						</a>
+						<a class="main__follow-link" href="">
+							<img alt="" class="main__follow-icon" src="img/FacebookIcon.svg">
+						</a>
+						<p class="main__follow-text">
+							Follow us
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container">
+			<div class="about__container">
+				<div class="about__cup-block">
+					<p class="about__cup-block-category category-text">About us</p>
+					<img alt="" class="about__cup-block-img" src="img/Cup.svg">
+				</div>
+				<div class="about__content">
+					<h2 class="about__title">
+						Coffee Shop Samwayle
+					</h2>
+					<p class="about__description">
+						Only one moment - when the barista reaches out over the bar to transfer the cup to the outstretched hand of
+						the buyer.
+						But this is exactly the moment when a connection arises between us and our guests.
+					</p>
+					<p class="about__description">
+						And we strive to do our best to maintain this connection - starting with our commitment to selecting the
+						highest quality coffee in the world and ending with how we interact with guests and organizations to fulfill
+						our obligations.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="promotion" id="promotion">
+		<div class="container">
+			<div class="promotion__container">
+				<div class="promotion__content">
+					<h2 class="promotion__title">
+						Coffee of the day
+					</h2>
+					<p class="promotion__description">
+						Americano coffee (Italian: Caffè Americano) is an espresso diluted with hot water. The presence of foam
+						(cream) depends on how coffee and water are mixed.
+						Attention! The concepts of “American” and “American coffee” should not be confused. n the seco case, this
+						refers not to diluted espresso, but to a drink prepared through a filter system.
+					</p>
+					<a class="promotion__btn btn" href="order.html" onclick="setValueToSelect(null)">
+						Order now
+					</a>
+				</div>
+				<div class="promotion__cup-block">
+					<p class="promotion__cup-block-category category-text">Promotion</p>
+					<img alt="" class="promotion__cup-block-img" src="img/CardboardCup.svg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="shop" id="shop">
+		<div class="container">
+			<div class="shop__container">
+				<div class="shop__slider">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<div class="contacts__container">
+				<div class="contacts__map">
+					<div class="contacts__map-img"></div>
+					<p class="contacts__map-category category-text">
+						Contacts
+					</p>
+				</div>
+				<div class="contacts__line"></div>
+				<div class="contacts__address">
+					<h2 class="contacts__address-title">
+						Our address
+					</h2>
+					<ul class="contacts__address-list">
+						<li class="contacts__address-item">
+							110 St-Cathedral Pkwy Station
+						</li>
+						<li class="contacts__address-item">
+							4310 94th St, Flushing
+						</li>
+						<li class="contacts__address-item">
+							94-54 Corona Ave., Elmhurst
+						</li>
+						<li class="contacts__address-item">
+							5627 Van Doren St, Queens
+						</li>
+						<li class="contacts__address-item">
+							<button class="btn contacts__address-item-btn" onclick="seeMoreAddress()">
+								See more address 	→
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__container">
+			<p class="footer__text">
+				2023 (c) - Samwyle bandtitos
+			</p>
+		</div>
+	</div>
+</footer>
+
+<script src="scripts/jquery-3.6.4.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/index.min.js"></script>
+
+</body>
+</html>
