@@ -1,14 +1,24 @@
 # CoffeeShop
+Это сайт онлайн продажи кофе.
 
-### Общая тех. информация (Frontend):
-- js, html, css
+### Стек технологий:
+- HTML, CSS, SCSS, JS
+- ASP.NET Minimal WebApi
+- Windows Server. IIS
+- EntityFramework
+- MySql
+- Swagger
 
-### Общая тех. информация (Backend):
-- Backend реализован на ASP.NET WebApi (C#)
-- Сервер nstu cloud WindowsServer IIS
+### Особенности:
+- Для простоты 
+- Документация Swagger
 
-### Ссылки:
-- [Ссылка на сайт (Frontend) !Не работает бэк на гит хабе, т.к. с сервера данные через http](https://parrotweb.github.io/CoffeeShop-Asp/)
-- [Документация Swagger (Backend)](http://217.71.129.139:4834/coffeeshop-webapi/swagger/index.html)
-- [Адрес сервера](http://217.71.129.139:4834/coffeeshop-webapi)
-- [Макет](https://www.figma.com/file/Tu7fReRjjpaBezcc5EXQJl/%D0%BA%D0%BE%D1%84%D0%B5?node-id=0%3A1)
+### Функционал приложения:
+- Получение списка доступных стран
+- Получение списка кодов валют для ЦБ определенной страны (ISO 4217)
+- Получение списка курсов валют ЦБ определенной страны
+- Конвертация валюты с помощью ЦБ определенной страны. По умолчанию ЦБ РФ
+
+---
+**PArrotWeb © 2022**  
+(parrotweb44@gmail.com)
