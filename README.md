@@ -1,14 +1,37 @@
 # CoffeeShop
+Это сайт онлайн-продажи кофе (Учебный проект). Для его реализации, были разработаны Frontend и Backend.  
+Frontend представляет собой одностраничный сайт, который подгружает доступные товары (виды кофе) и предоставляет 
+функционал для оформления заказа.  
+Backend в свою очередь предоставляет API для Frontend (информация о товарах, оформление заказа)
 
-### Общая тех. информация (Frontend):
-- js, html, css
+### Использование:
+1. Скачать docker-compose.yml
+2. Открыть терминал в папке с docker-compose.yml, ввести команду `docker compose -p coffee-shop up -d`  
+   *(На устройстве должен быть установлен и запущен Docker)*
 
-### Общая тех. информация (Backend):
-- Backend реализован на ASP.NET WebApi (C#)
-- Сервер nstu cloud WindowsServer IIS
+### Стек технологий:
+- HTML, SCSS, JS, JQuery
+- ASP.NET Minimal API
+- Docker, Docker Compose
+- Entity Framework Core
+- MySql
+- Adminer
+- Swagger
 
-### Ссылки:
-- [Ссылка на сайт (Frontend) !Не работает бэк на гит хабе, т.к. с сервера данные через http](https://parrotweb.github.io/CoffeeShop-Asp/)
-- [Документация Swagger (Backend)](http://217.71.129.139:4834/coffeeshop-webapi/swagger/index.html)
-- [Адрес сервера](http://217.71.129.139:4834/coffeeshop-webapi)
-- [Макет](https://www.figma.com/file/Tu7fReRjjpaBezcc5EXQJl/%D0%BA%D0%BE%D1%84%D0%B5?node-id=0%3A1)
+### Особенности:
+- Для минимизации кода и ускорения разработки был выбран Minimal API
+- Контейнеризация приложения с помощью Docker, запуск через docker-compose (включая внешние тома для базы данных)
+- Использование Entity Framework Core для работы с базой данных
+- Использование MySql в качестве базы данных
+- Использование Adminer для управления базой данных
+- Использование Swagger для документирования API
+
+### Функционал Backend приложения:
+- Методы Get, Post, Update, Delete для получение списка видов кофе (id, название, описание)
+- Методы Get, Post, Update, Delete для получения списка видов оплаты (id, название вида оплаты)
+- Методы Get, Post, Update, Delete для получения и отправки информации о заказе (id, данные заказчика, дата, вид 
+  кофе, вид оплаты, комментарий к заказу)
+
+---
+**PArrotWeb © 2023**  
+(parrotweb44@gmail.com)

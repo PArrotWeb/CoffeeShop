@@ -1,0 +1,40 @@
+﻿version: '1.0.0'
+
+services:
+  api:
+    image: parrotweb/coffee-shop-api:latest
+    build: ./CoffeeShop.Backend/CoffeeShop/
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "5002:80"
+    depends_on:
+      - mysql
+  client:
+    image: parrotweb/coffee-shop-client:latest
+    build: ./CoffeeShop.Frontend/
+    restart: always
+    ports:
+      - "8082:80"
+    depends_on:
+      - api
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=0000
+      - MYSQL_DATABASE=coffee_shop
+    volumes:
+      - mysql_data:/var/lib/mysql
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8180:8080"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:

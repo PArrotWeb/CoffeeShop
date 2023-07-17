@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta
+			charset="UTF-8" name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Order</title>
+	<link rel="shortcut icon" href="img/LogoIcon.svg" type="image/svg">
+	<link href="css/order.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="header__container">
+			<div class="header__empty"></div>
+			<h2 class="header__title">
+				Place Order
+			</h2>
+			<a class="header__back-btn" href="index.html"></a>
+		</div>
+	</div>
+</header>
+<main class="main">
+	<div class="container">
+		<form class="form" onsubmit="sendOrder(); return false;">
+			<div class="form__information">
+				<div class="form__contact">
+					<h3 class="form__title">
+						Contact Information:
+					</h3>
+					<div class="form__block">
+						<label class="form__label">
+							Full Name:<br>
+							<input id="name" type="text" class="form__block-input" required placeholder="Cameron Williamson">
+						</label>
+					</div>
+					<div class="form__block">
+						<label class="form__label">
+							Phone Number:<br>
+							<input id="phone" type="tel" class="form__block-input" required placeholder="(217) 555-0113">
+						</label>
+					</div>
+					<div class="form__block">
+						<label class="form__label">
+							E-mail:<br>
+							<input id="email" type="email" class="form__block-input" required placeholder="debbie.baker@example.com">
+						</label>
+					</div>
+					<div class="form__block">
+						<label class="form__label">
+							Full Address:<br>
+							<input id="address"
+							type="text" class="form__block-input" required placeholder="2715 Ash Dr. San Jose, South Dakota 83475"
+							>
+						</label>
+					</div>
+				</div>
+				<div class="form__order">
+					<h3 class="form__title">
+						Order Information:
+					</h3>
+					<div class="form__block">
+						<label class="form__label">
+							Date&Time:<br>
+							<input id="date" type="datetime-local" class="form__block-input" required
+							       placeholder="Fri 26 Jun, 2020 10:30 pm">
+						</label>
+					</div>
+					<div class="form__block">
+						<label class="form__label">
+							Product:<br>
+							<select id="product" name="product" class="form__select form__select-product">
+							</select>
+						</label>
+					</div>
+					<div class="form__block">
+						<label class="form__label">
+							Payment Method:<br>
+							<select id="payment-method" name="payment" class="form__select form__select-payment-method">
+							</select>
+						</label>
+					</div>
+					<div class="form__block">
+						<label class="form__label">
+							Additional delivery information:<br>
+							<input id="additional" type="text" class="form__block-input" placeholder="...">
+						</label>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="form__btn btn">Submit</button>
+		</form>
+	</div>
+</main>
+
+<script src="scripts/order.min.js"></script>
+</body>
+</html>
