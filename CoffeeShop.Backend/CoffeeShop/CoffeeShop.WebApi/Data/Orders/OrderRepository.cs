@@ -1,10 +1,14 @@
 ﻿namespace CoffeeShop.WebApi.Data.Orders;
 
 /// <summary>
-/// Implementation of <see cref="IOrderRepository"/>
+/// Implementation of <see cref="IOrderRepository" />
 /// </summary>
 public class OrderRepository : IOrderRepository
 {
+
+	private readonly CoffeeShopDb _context;
+
+	private bool _disposed;
 
 	public OrderRepository(CoffeeShopDb context)
 	{
@@ -15,14 +19,20 @@ public class OrderRepository : IOrderRepository
 	public async Task<List<Order>> GetAsync()
 	{
 		var orders = await _context.Orders.ToListAsync();
-		if (orders is null) throw new Exception("Orders not found");
+		if (orders is null)
+		{
+			throw new Exception("Orders not found");
+		}
 		return orders;
 	}
 
 	public async Task<Order> GetAsync(int id)
 	{
 		var order = await _context.Orders.FindAsync(id);
-		if (order is null) throw new Exception("Order not found");
+		if (order is null)
+		{
+			throw new Exception("Order not found");
+		}
 		return order;
 	}
 
@@ -34,7 +44,10 @@ public class OrderRepository : IOrderRepository
 	public async Task UpdateAsync(Order order)
 	{
 		var orderFromDb = await _context.Orders.FindAsync(order.Id);
-		if (orderFromDb is null) throw new Exception("Order not found");
+		if (orderFromDb is null)
+		{
+			throw new Exception("Order not found");
+		}
 
 		orderFromDb.Name = order.Name;
 		orderFromDb.Phone = order.Phone;
@@ -49,7 +62,10 @@ public class OrderRepository : IOrderRepository
 	public async Task DeleteAsync(int id)
 	{
 		var orderFromDb = await _context.Orders.FindAsync(id);
-		if (orderFromDb is null) throw new Exception("Order not found");
+		if (orderFromDb is null)
+		{
+			throw new Exception("Order not found");
+		}
 		_context.Orders.Remove(orderFromDb);
 	}
 
@@ -59,19 +75,21 @@ public class OrderRepository : IOrderRepository
 	}
 	#endregion
 
-	private readonly CoffeeShopDb _context;
-
 	public void Dispose()
 	{
 		Dispose(true);
 		GC.SuppressFinalize(this);
 	}
-
-	private bool _disposed;
 	protected virtual void Dispose(bool disposing)
 	{
-		if (_disposed) return;
-		if (disposing) _context.Dispose();
+		if (_disposed)
+		{
+			return;
+		}
+		if (disposing)
+		{
+			_context.Dispose();
+		}
 		_disposed = true;
 	}
 }

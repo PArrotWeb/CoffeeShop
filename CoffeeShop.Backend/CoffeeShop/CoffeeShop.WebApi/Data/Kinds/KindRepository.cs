@@ -1,10 +1,14 @@
 ﻿namespace CoffeeShop.WebApi.Data.Kinds;
 
 /// <summary>
-/// Implementation of <see cref="IKindRepository"/>
+/// Implementation of <see cref="IKindRepository" />
 /// </summary>
 public sealed class KindRepository : IKindRepository
 {
+
+	private readonly CoffeeShopDb _context;
+
+	private bool _disposed;
 
 	public KindRepository(CoffeeShopDb context)
 	{
@@ -15,14 +19,20 @@ public sealed class KindRepository : IKindRepository
 	public async Task<List<Kind>> GetAsync()
 	{
 		var kinds = await _context.Kinds.ToListAsync();
-		if (kinds is null) throw new Exception("Kinds not found");
+		if (kinds is null)
+		{
+			throw new Exception("Kinds not found");
+		}
 		return kinds;
 	}
 
 	public async Task<Kind> GetAsync(int id)
 	{
 		var kind = await _context.Kinds.FindAsync(id);
-		if (kind is null) throw new Exception("Kind not found");
+		if (kind is null)
+		{
+			throw new Exception("Kind not found");
+		}
 		return kind;
 	}
 
@@ -34,7 +44,10 @@ public sealed class KindRepository : IKindRepository
 	public async Task UpdateAsync(Kind kind)
 	{
 		var kindFromDb = await _context.Kinds.FindAsync(kind.Id);
-		if (kindFromDb is null) throw new Exception("Kind not found");
+		if (kindFromDb is null)
+		{
+			throw new Exception("Kind not found");
+		}
 		kindFromDb.Title = kind.Title;
 		kindFromDb.Description = kind.Description;
 	}
@@ -42,7 +55,10 @@ public sealed class KindRepository : IKindRepository
 	public async Task DeleteAsync(int id)
 	{
 		var kindFromDb = await _context.Kinds.FindAsync(id);
-		if (kindFromDb is null) throw new Exception("Kind not found");
+		if (kindFromDb is null)
+		{
+			throw new Exception("Kind not found");
+		}
 		_context.Kinds.Remove(kindFromDb);
 	}
 
@@ -52,19 +68,21 @@ public sealed class KindRepository : IKindRepository
 	}
 	#endregion
 
-	private readonly CoffeeShopDb _context;
-
 	public void Dispose()
 	{
 		Dispose(true);
 		GC.SuppressFinalize(this);
 	}
-
-	private bool _disposed;
 	private void Dispose(bool disposing)
 	{
-		if (_disposed) return;
-		if (disposing) _context.Dispose();
+		if (_disposed)
+		{
+			return;
+		}
+		if (disposing)
+		{
+			_context.Dispose();
+		}
 		_disposed = true;
 	}
 }

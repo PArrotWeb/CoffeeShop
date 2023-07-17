@@ -9,12 +9,12 @@ public class Kind
 	/// Id of the Kind
 	/// </summary>
 	public int Id { get; set; }
-	
+
 	/// <summary>
 	/// Name of the Kind
 	/// </summary>
 	public string Title { get; set; } = null!;
-	
+
 	/// <summary>
 	/// Description of the Kind
 	/// </summary>

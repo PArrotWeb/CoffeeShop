@@ -4,6 +4,7 @@ using CoffeeShop.WebApi.Data.Kinds;
 using CoffeeShop.WebApi.Data.Orders;
 using CoffeeShop.WebApi.Data.PaymentMethods;
 
+// builder
 var builder = WebApplication.CreateBuilder(args);
 RegisterServices();
 
@@ -15,21 +16,21 @@ app.Run();
 void RegisterServices()
 {
 	var services = builder.Services;
-	
+
 	// swagger
 	if (builder.Environment.IsDevelopment())
 	{
 		services.AddEndpointsApiExplorer();
 		services.AddSwaggerGen();
 	}
-	
+
 	// set up database
 	services.AddDbContext<CoffeeShopDb>(o =>
 	{
 		var connectionString = builder.Configuration.GetConnectionString("MySql");
 		o.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 	});
-	
+
 	services.AddScoped<IKindRepository, KindRepository>();
 	services.AddScoped<IOrderRepository, OrderRepository>();
 	services.AddScoped<IPaymentMethodRepository, PaymentMethodsRepository>();
@@ -70,7 +71,10 @@ void Configure()
 	var apis = app.Services.GetServices<IApi>();
 	foreach (var api in apis)
 	{
-		if (api is null) throw new InvalidProgramException("Api not found");
+		if (api is null)
+		{
+			throw new InvalidProgramException("Api not found");
+		}
 		api.Register(app);
 	}
 }

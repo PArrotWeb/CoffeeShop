@@ -57,7 +57,7 @@ public class OrdersApi : IApi
 		// insert order into the database
 		await orderRepository.InsertAsync(order);
 		await orderRepository.SaveAsync();
-		
+
 		// return created order
 		return Results.Created($"/orders/{order.Id}", order);
 	}
@@ -67,7 +67,7 @@ public class OrdersApi : IApi
 		// update order in the database
 		await orderRepository.UpdateAsync(order);
 		await orderRepository.SaveAsync();
-		
+
 		return Results.NoContent();
 	}
 
@@ -76,7 +76,7 @@ public class OrdersApi : IApi
 		// delete order from the database
 		await orderRepository.DeleteAsync(id);
 		await orderRepository.SaveAsync();
-		
+
 		return Results.NoContent();
 	}
 }

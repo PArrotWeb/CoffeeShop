@@ -1,7 +1,7 @@
 ﻿namespace CoffeeShop.WebApi.Data.PaymentMethods;
 
 /// <summary>
-///	Entity for the PaymentMethod table
+/// Entity for the PaymentMethod table
 /// </summary>
 public class PaymentMethod
 {
@@ -9,7 +9,7 @@ public class PaymentMethod
 	/// Id of the PaymentMethod
 	/// </summary>
 	public int Id { get; set; }
-	
+
 	/// <summary>
 	/// Name of the PaymentMethod
 	/// </summary>

@@ -57,7 +57,7 @@ public class KindsApi : IApi
 		// insert kind into database
 		await kindRepository.InsertAsync(kind);
 		await kindRepository.SaveAsync();
-		
+
 		// return created kind
 		return Results.Created($"/kinds/{kind.Id}", kind);
 	}
@@ -67,7 +67,7 @@ public class KindsApi : IApi
 		// update kind in database
 		await kindRepository.UpdateAsync(kind);
 		await kindRepository.SaveAsync();
-		
+
 		return Results.NoContent();
 	}
 
@@ -76,7 +76,7 @@ public class KindsApi : IApi
 		// delete kind by id from database
 		await kindRepository.DeleteAsync(id);
 		await kindRepository.SaveAsync();
-		
+
 		return Results.NoContent();
 	}
 }

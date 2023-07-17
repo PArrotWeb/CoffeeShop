@@ -59,7 +59,7 @@ public class PaymentMethodsApi : IApi
 		// insert payment method into the database
 		await paymentMethodRepository.InsertAsync(paymentMethod);
 		await paymentMethodRepository.SaveAsync();
-		
+
 		// return created payment method
 		return Results.Created($"/payment-methods/{paymentMethod.Id}", paymentMethod);
 	}
@@ -70,7 +70,7 @@ public class PaymentMethodsApi : IApi
 		// update payment method in the database
 		await paymentMethodRepository.UpdateAsync(paymentMethod);
 		await paymentMethodRepository.SaveAsync();
-		
+
 		return Results.NoContent();
 	}
 
@@ -80,7 +80,7 @@ public class PaymentMethodsApi : IApi
 		// delete payment method from the database
 		await paymentMethodRepository.DeleteAsync(id);
 		await paymentMethodRepository.SaveAsync();
-		
+
 		return Results.NoContent();
 	}
 }
