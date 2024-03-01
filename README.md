@@ -10,7 +10,7 @@
 1. Скачать docker-compose.yml
 2. Открыть терминал в папке с docker-compose.yml, ввести команду `docker compose -p coffee-shop up -d`  
    *(На устройстве должен быть установлен и запущен Docker)*
-3. Поменять адрес сервера в frintend части в помощью команд:
+3. Поменять адрес сервера в frontend части в помощью команд:
    ```
    docker exec имя_контейнера sed -i 's/217.71.129.139:4578/новый_адрес/g' /data/www/scripts/index.min.js
    docker exec имя_контейнера sed -i 's/217.71.129.139:4578/новый_адрес/g' /data/www/scripts/order.min.js
